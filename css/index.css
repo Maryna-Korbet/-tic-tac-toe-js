@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    margin: 100px 50px 50px 50px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    width: 150px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
