@@ -1,4 +1,4 @@
-// import { combination } from "./combination";
+import { combination } from "./combination.js";
 
 
 const content = document.querySelector('.content');
@@ -34,12 +34,19 @@ function handlerStep(e) {
     if (player === "O") {
         historyO.push(id);
         player = "X";
+      /*   console.log('historyO--->', historyO);
+        console.log('historyO--->', checkWinner(historyO)); */
     } else {
         historyX.push(id);
         player = "O";
+       /*  console.log('historyX--->', historyX);
+        console.log('historyX--->', checkWinner(historyX)); */
     }
-    /* console.log('historyO--->', historyO);
-    console.log('historyX--->', historyX); */ 
 }
+
+function checkWinner(arr) {
+    return combination.some(item => item.every(id => arr.includes(id)))
+}
+
 
 
