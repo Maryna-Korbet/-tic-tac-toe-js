@@ -19,6 +19,8 @@ content.addEventListener('click', handlerStep);
 
 function handlerStep(e) {
     const { target } = e;
+    let isWinner = false;
+
    /*  console.log(target);  */
 
     if (!target.classList.contains('js-item') || target.textContent){
@@ -34,12 +36,14 @@ function handlerStep(e) {
     if (player === "O") {
         historyO.push(id);
         player = "X";
-      /*   console.log('historyO--->', historyO);
+        isWinner = historyO.length > 2 && checkWinner(historyO);
+        /*   console.log('historyO--->', historyO);
         console.log('historyO--->', checkWinner(historyO)); */
     } else {
         historyX.push(id);
         player = "O";
-       /*  console.log('historyX--->', historyX);
+        isWinner = historyX.length > 2 && checkWinner(historyX);
+        /*  console.log('historyX--->', historyX);
         console.log('historyX--->', checkWinner(historyX)); */
     }
 }
