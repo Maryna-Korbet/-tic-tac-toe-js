@@ -7,16 +7,21 @@
     <meta name="description" content="The intellectual game tic tac toe" />
     <link rel="icon" href="./pablic/favicon.svg" type="image/svg+xml" />
     <title>Game "TIC-TAC-TOE"</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css"
+    />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body>
+  <body class="container">
     <div>
-      <button class="js-reset">Reset Game</button>
-      <div class="container">
+      <div class="content-container">
         <div class="content"></div>
       </div>
+      <button class="resetBtn js-reset">Reset Game</button>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
     <script type="module" src="./js/script.js"></script>
   </body>
 </html>
