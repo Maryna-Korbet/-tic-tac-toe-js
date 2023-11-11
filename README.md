@@ -3,7 +3,7 @@
   &#xa0;
 </div>
 
-<h1 align="center">Tic-Tac-Toe-Js</h1>
+<h1 align="center">Tic-Tac-Toe</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/Maryna-Korbet/tic-tac-toe-js?color=56BEB8">
@@ -20,7 +20,8 @@
 
 ## :dart: About
 
-A simple tic-tac-toe game written in the JavaScript.
+The simple intellectual game Tic-Tac-Toe written in the JavaScript.
+<a href="https://maryna-korbet.github.io/tic-tac-toe-js/">GAME LINK</a>
 
 ## :sparkles: Features
 
@@ -31,5 +32,3 @@ A game for two players.
 The following tools were used in this project:
 
 - [JavaScript](https://www.w3schools.com/js/)
-
-<a href="#top">Back to top</a>
